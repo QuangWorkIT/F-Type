@@ -164,7 +164,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 64732c6a890a20c46a90460942cb0532, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ff0593381b92b554391ba84b30ede428, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 68934190}
   - component: {fileID: 68934189}
   - component: {fileID: 68934188}
+  - component: {fileID: 68934192}
   - component: {fileID: 68934191}
   m_Layer: 5
   m_Name: TextButtom
@@ -334,9 +335,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 68934191}
+      - m_Target: {fileID: 68934192}
         m_TargetAssemblyTypeName: MouseClickScript, Assembly-CSharp
         m_MethodName: playAudioClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 68934191}
+        m_TargetAssemblyTypeName: changeScene, Assembly-CSharp
+        m_MethodName: change
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -393,7 +406,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 68934186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35456121744863646943ec89a0bc6a0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 799cb2e5be84e8341978261e86bdb5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Menu
+--- !u!114 &68934192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68934186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e02b814e67d0042977141402a58021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 7725765}
@@ -545,7 +571,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4a77b4d06ff724a469b85086787bc734, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ffd75d3d8c4fba246999b6d0d73ed833, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -643,6 +669,7 @@ GameObject:
   - component: {fileID: 249827780}
   - component: {fileID: 249827779}
   - component: {fileID: 249827778}
+  - component: {fileID: 249827782}
   - component: {fileID: 249827781}
   m_Layer: 5
   m_Name: NormalButtom
@@ -715,9 +742,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 249827781}
+      - m_Target: {fileID: 249827782}
         m_TargetAssemblyTypeName: MouseClickScript, Assembly-CSharp
         m_MethodName: playAudioClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 249827781}
+        m_TargetAssemblyTypeName: changeScene, Assembly-CSharp
+        m_MethodName: change
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -774,7 +813,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 249827776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35456121744863646943ec89a0bc6a0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 799cb2e5be84e8341978261e86bdb5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 30sScene
+--- !u!114 &249827782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249827776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e02b814e67d0042977141402a58021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 7725765}
@@ -790,6 +842,7 @@ GameObject:
   - component: {fileID: 417602202}
   - component: {fileID: 417602201}
   - component: {fileID: 417602200}
+  - component: {fileID: 417602204}
   - component: {fileID: 417602203}
   m_Layer: 5
   m_Name: FailuredButtom
@@ -874,6 +927,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 417602204}
+        m_TargetAssemblyTypeName: changeScene, Assembly-CSharp
+        m_MethodName: change
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &417602201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,10 +986,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 417602198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35456121744863646943ec89a0bc6a0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e02b814e67d0042977141402a58021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 7725765}
+--- !u!114 &417602204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417602198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 799cb2e5be84e8341978261e86bdb5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: UnLimitedScene
 --- !u!1 &557183019
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,8 +1015,8 @@ GameObject:
   - component: {fileID: 557183023}
   - component: {fileID: 557183022}
   - component: {fileID: 557183021}
-  - component: {fileID: 557183024}
   - component: {fileID: 557183025}
+  - component: {fileID: 557183024}
   m_Layer: 5
   m_Name: ExitButtom
   m_TagString: Untagged
@@ -1081,7 +1159,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 557183019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35456121744863646943ec89a0bc6a0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e02b814e67d0042977141402a58021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 7725765}
@@ -1094,7 +1172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 557183019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1703cbabf0647f24499427276c10e9eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 799cb2e5be84e8341978261e86bdb5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Menu
@@ -1268,7 +1346,7 @@ GameObject:
   - component: {fileID: 862999721}
   - component: {fileID: 862999720}
   - component: {fileID: 862999719}
-  - component: {fileID: 862999718}
+  - component: {fileID: 862999723}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1276,20 +1354,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &862999718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 862999717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 262cb006811052d45822353ca0b580d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.01
-  bg: {fileID: 862999720}
 --- !u!64 &862999719
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1332,7 +1396,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c9e49f5261bd3d48825f1ed5b566da2, type: 2}
+  - {fileID: 2100000, guid: 0a673630ef8bceb4e8eb934ca82aca19, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1377,6 +1441,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1397134690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &862999723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862999717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82497697c851184e885fc6759170791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.01
+  bg: {fileID: 862999720}
 --- !u!1 &1383412091
 GameObject:
   m_ObjectHideFlags: 0
